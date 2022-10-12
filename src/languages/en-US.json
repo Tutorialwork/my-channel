@@ -1,0 +1,24 @@
+{
+  "setup": {
+    "setup_speak": "The skill still needs to be set up via a web page, to do this open the Alexa app and then under the More tab open the activities and follow the instructions.",
+    "card": {
+      "title": "Skill setup needed",
+      "message": "Open https://skill.manuelschuler.dev and enter the following Code: %code%"
+    }
+  },
+  "last_video": {
+    "message": "Your last videos popularity is with %views% views and %likes% likes in average %state%.",
+    "states": {
+      "-2": "Very bad",
+      "-1": "Bad",
+      "1": "Good",
+      "2": "Very good"
+    }
+  },
+  "subscribers": "You have currently %subscriber% subscribers.",
+  "channel_stats": "Your channel has get %views% views with in total %videos% videos",
+  "last_comment": "Your last comment was: %comment%",
+  "welcome": "Hello %username%. Your channel has currently %subscribers% subscribers.",
+  "stop": "See you the next time",
+  "help": "You can say subscribers, last video, channel statistics or last comment"
+}

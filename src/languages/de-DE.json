@@ -1,0 +1,24 @@
+{
+  "setup": {
+    "setup_speak": "Der Skill muss noch über eine Webseite eingerichtet werden, öffne dazu die Alexa App und dann unter dem Reiter Mehr die Aktivitäten und folge den Anweisungen.",
+    "card": {
+      "title": "Skilleinrichtung benötigt",
+      "message": "Öffne https://skill.manuelschuler.dev und gebe deinen Code %code% ein"
+    }
+  },
+  "last_video": {
+    "message": "Dein letztes Video ist mit %views% Aufrufen und %likes% Likes durschnittlich %state% angekommen.",
+    "states": {
+      "-2": "Sehr schlecht",
+      "-1": "Schlecht",
+      "1": "Gut",
+      "2": "Sehr gut"
+    }
+  },
+  "subscribers": "Du hast aktuell %subscriber% Abonnenten.",
+  "channel_stats": "Dein Kanal hat insgesamt %views% Aufrufe erhalten bei insgesamt %videos% Videos",
+  "last_comment": "Dein letzter Kommentar lautet: %comment%",
+  "welcome": "Hallo %username%. Dein Kanal hat zurzeit %subscribers% Abonnenten.",
+  "stop": "Bis zum nächsten mal",
+  "help": "Versuche es doch mal indem du abonnenten, letztes video, kanal statistik oder letzter kommentar sagst"
+}
