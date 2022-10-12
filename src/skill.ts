@@ -2,7 +2,6 @@ import { CustomSkill } from 'ask-sdk-core/dist/skill/CustomSkill';
 import { SkillBuilders } from 'ask-sdk-core';
 import { ExpressAdapter } from 'ask-sdk-express-adapter';
 import express from 'express';
-import rateLimit, { RateLimitRequestHandler } from 'express-rate-limit'
 import cors from 'cors';
 import { LaunchRequestHandler } from './intents/LaunchRequestHandler';
 import { connectToDatabase } from './helper/DatabaseHelper';
@@ -39,23 +38,13 @@ const skill: CustomSkill = SkillBuilders
 
 const adapter: ExpressAdapter = new ExpressAdapter(skill, true, true);
 
-const codeApiRateLimit: RateLimitRequestHandler = rateLimit({
-    windowMs: 120 * 60 * 1000,
-    max: 10,
-    standardHeaders: false,
-    legacyHeaders: false,
-    message: {
-        error: 'Too many requests'
-    }
-});
-
 const app = express();
 app.disable('x-powered-by');
 app.post('', adapter.getRequestHandlers());
 app.use(express.json());
 app.use(cors());
-app.post('/verify', codeApiRateLimit, verifyCodeRequest);
-app.post('/channel', codeApiRateLimit, setChannelRequest);
+app.post('/verify', verifyCodeRequest);
+app.post('/channel', setChannelRequest);
 app.get('/channel/:query', searchChannelRequest);
 
 app.listen(3000);

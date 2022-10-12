@@ -13,7 +13,7 @@ export const UserCreation: RequestInterceptor = {
         if (!existingUser) {
             const user: User = new User();
             user.id = userId;
-            user.code = Math.floor(Math.random() * 9999) + 1000;
+            user.code = Math.floor(Math.random() * 999999) + 100000;
             await appDataSource.getRepository(User).save(user);
         }
     }
