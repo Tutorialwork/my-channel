@@ -1,12 +1,12 @@
 {
-  "name": "royalestats-skill",
+  "name": "mychannel-skill",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/skill.ts",
     "build": "tsc",
-    "start": ""
+    "start": "node dist/skill.js"
   },
   "keywords": [],
   "author": "",
