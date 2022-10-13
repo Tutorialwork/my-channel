@@ -3,7 +3,7 @@
     "setup_speak": "Der Skill muss noch über eine Webseite eingerichtet werden, öffne dazu die Alexa App und dann unter dem Reiter Mehr die Aktivitäten und folge den Anweisungen.",
     "card": {
       "title": "Skilleinrichtung benötigt",
-      "message": "Öffne https://skill.manuelschuler.dev und gebe deinen Code %code% ein"
+      "message": "Öffne https://skills.manuelschuler.dev und gebe deinen Code %code% ein"
     }
   },
   "last_video": {

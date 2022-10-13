@@ -3,7 +3,7 @@
     "setup_speak": "The skill still needs to be set up via a web page, to do this open the Alexa app and then under the More tab open the activities and follow the instructions.",
     "card": {
       "title": "Skill setup needed",
-      "message": "Open https://skill.manuelschuler.dev and enter the following Code: %code%"
+      "message": "Open https://skills.manuelschuler.dev and enter the following Code: %code%"
     }
   },
   "last_video": {
