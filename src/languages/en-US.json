@@ -4,6 +4,12 @@
     "card": {
       "title": "Skill setup needed",
       "message": "Open https://skills.manuelschuler.dev and enter the following Code: %code%"
+    },
+    "email_setup_speak": "To setup the skill I will send you an email.",
+    "email_permissions_status": {
+      "ACCEPTED": "I've send you an email. Click on the link to setup the skill.",
+      "DENIED": "The skill still needs to be set up via a web page, to do this open the Alexa app and then under the More tab open the activities and follow the instructions.",
+      "REDIRECT_TO_APP": "Please open your Alexa app to grant the permissions to your email address."
     }
   },
   "last_video": {

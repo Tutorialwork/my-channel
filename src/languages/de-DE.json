@@ -4,6 +4,12 @@
     "card": {
       "title": "Skilleinrichtung benötigt",
       "message": "Öffne https://skills.manuelschuler.dev und gebe deinen Code %code% ein"
+    },
+    "email_setup_speak": "Um den Skill einzurichten sende ich dir eine Email mit dem Link.",
+    "email_permissions_status": {
+      "ACCEPTED": "Ich habe dir eine Email gesendet. Folge dem Link um den Skill einzurichten.",
+      "DENIED": "Der Skill muss noch über eine Webseite eingerichtet werden, öffne dazu die Alexa App und dann unter dem Reiter Mehr die Aktivitäten und folge den Anweisungen.",
+      "REDIRECT_TO_APP": "Bitte gehe in die Alexa App um die Berechtigung zu erteilen."
     }
   },
   "last_video": {

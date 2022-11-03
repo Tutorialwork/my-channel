@@ -19,7 +19,7 @@ export const LastCommentIntentHandler: RequestHandler = {
         const messages: any = require(`../languages/${getLocale(input.requestEnvelope)}.json`);
 
         if (!user?.channelId) {
-            return getSetupMessage(input, user?.code);
+            return getSetupMessage(input);
         }
 
         try {

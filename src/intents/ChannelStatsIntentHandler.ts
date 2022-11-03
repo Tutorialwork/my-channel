@@ -18,7 +18,7 @@ export const ChannelStatsIntentHandler: RequestHandler = {
             }
         });
         if (!user?.channelId) {
-            return getSetupMessage(input, user?.code);
+            return getSetupMessage(input);
         }
 
         try {

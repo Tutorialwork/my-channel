@@ -16,6 +16,7 @@ import { LastCommentIntentHandler } from './intents/LastCommentIntentHandler';
 import { SessionEndedRequestHandler } from './intents/SessionEndedRequestHandler';
 import { StopIntentHandler } from './intents/StopIntentHandler';
 import { HelpIntentHandler } from './intents/HelpIntentHandler';
+import { SessionResumedRequestHandler } from './intents/SessionResumedRequestHandler';
 
 const skill: CustomSkill = SkillBuilders
     .custom()
@@ -32,7 +33,8 @@ const skill: CustomSkill = SkillBuilders
         UserCreation
     )
     .addErrorHandlers(
-        SessionEndedRequestHandler
+        SessionEndedRequestHandler,
+        SessionResumedRequestHandler
     )
     .create();
 
