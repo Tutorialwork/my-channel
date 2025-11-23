@@ -13,6 +13,10 @@ ADD . /usr/src/app
 
 RUN npm run build
 
+COPY init-entrypoint.sh /init-entrypoint.sh
+
+ENTRYPOINT ["/init-entrypoint.sh"]
+
 CMD [ "npm", "run", "start" ]
 
 EXPOSE 3000
